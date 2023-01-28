@@ -18,6 +18,7 @@
   "homepage": "https://github.com/shiiyan/my-simple-cqrs#readme",
   "devDependencies": {
     "@types/jest": "^29.4.0",
+    "guid-typescript": "^1.0.9",
     "jest": "^29.4.1",
     "ts-jest": "^29.0.5",
     "typescript": "^4.9.4"
