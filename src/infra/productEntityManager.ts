@@ -8,10 +8,13 @@ type ProductEntity = {
 };
 
 export default class ProductEntityManager {
-  private entityList: ProductEntity[] = [];
+  private entityMap: Map<number, ProductEntity> = new Map();
 
   findById(id: number): ProductEntity | null {
-    return {};
+    return this.entityMap.get(id) ?? null;
   }
-  save(entity: ProductEntity): void {}
+
+  save(entity: ProductEntity): void {
+    this.entityMap.set(entity.id, entity);
+  }
 }
