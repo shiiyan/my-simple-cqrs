@@ -7,6 +7,16 @@ export default class ProductEntityManager {
     return this.entityMap.get(id) ?? null;
   }
 
+  findAllByName(name: string): ProductEntity[] {
+    const result: ProductEntity[] = [];
+    this.entityMap.forEach((product) => {
+      if (product.name === name) {
+        result.push(product);
+      }
+    });
+    return result;
+  }
+
   save(entity: ProductEntity): void {
     this.entityMap.set(entity.id, entity);
   }
