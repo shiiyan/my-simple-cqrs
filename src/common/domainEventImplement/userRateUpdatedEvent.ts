@@ -1,4 +1,4 @@
-import DomainEvent from "../common/domainEvent";
+import DomainEvent from "../domainEvent";
 
 export default class UserRateUpdatedEvent extends DomainEvent {
   productId: number;
