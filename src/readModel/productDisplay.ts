@@ -1,10 +1,10 @@
 export default class ProductDisplay {
-  id: number;
-  name: string;
-  description: string;
-  unitPrice: number;
-  isOutOfStock: boolean;
-  averageUserRating: number;
+  readonly id: number;
+  readonly name: string;
+  readonly description: string;
+  readonly unitPrice: number;
+  readonly isOutOfStock: boolean;
+  readonly averageUserRating: number;
 
   constructor(
     id: number,
