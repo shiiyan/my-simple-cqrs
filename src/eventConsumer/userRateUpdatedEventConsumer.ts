@@ -34,7 +34,7 @@ export default class UserRateUpdatedEventConsumer
       name: product.getName(),
       description: product.getDescription(),
       unitPrice: product.getUnitPrice(),
-      isOutOfStock: product.getCurrentStock() > 0,
+      isOutOfStock: product.getCurrentStock() <= 0,
       averageUserRating: averageRating,
     });
   }
